@@ -1,38 +1,41 @@
-[
-    {
-        "id": "1",
-        "title": "Web Development",
-        "description": "We create responsive, high-performance websites tailored to your business needs, using modern technologies to ensure scalability and usability.",
-        "tags": ["Responsive", "E-commerce", "Custom Applications"]
-    },
-    {
-        "id": "2",
-        "title": "Branding",
-        "description": "We craft a compelling brand identity that resonates with your target audience, including logo design, brand guidelines, and messaging.",
-        "tags": ["Logo Design", "Brand Strategy", "Marketing"]
-    },
-    {
-        "id": "3",
-        "title": "IT Solutions",
-        "description": "Our IT solutions include robust CRM systems and efficient telephony integrations to streamline your business operations.",
-        "tags": ["CRM", "Telephony", "Infrastructure"]
-    },
-    {
-        "id": "4",
-        "title": "Automation",
-        "description": "We automate repetitive tasks and workflows, enabling you to focus on strategic initiatives and improve operational efficiency.",
-        "tags": ["Workflow", "Data Sync", "Optimization"]
-    },
-    {
-        "id": "5",
-        "title": "Web Design",
-        "description": "Our web design services ensure aesthetically pleasing and user-friendly interfaces that elevate user experience and engagement.",
-        "tags": ["UI/UX", "Landing Pages", "Responsive Design"]
-    },
-    {
-        "id": "6",
-        "title": "Graphics Design",
-        "description": "We offer top-notch graphic design services, creating visually stunning assets for both digital and print media.",
-        "tags": ["Posters", "Infographics", "Advertisements"]
-    }
-]
+{
+    "services": [
+        {
+            "id": "1",
+            "title": "Web Development",
+            "description": "We create responsive, high-performance websites tailored to your business needs, using modern technologies to ensure scalability and usability.",
+            "tags": ["Responsive", "E-commerce", "Custom Applications"]
+        },
+        {
+            "id": "2",
+            "title": "Branding",
+            "description": "We craft a compelling brand identity that resonates with your target audience, including logo design, brand guidelines, and messaging.",
+            "tags": ["Logo Design", "Brand Strategy", "Marketing"]
+        },
+        {
+            "id": "3",
+            "title": "IT Solutions",
+            "description": "Our IT solutions include robust CRM systems and efficient telephony integrations to streamline your business operations.",
+            "tags": ["CRM", "Telephony", "Infrastructure"]
+        },
+        {
+            "id": "4",
+            "title": "Automation",
+            "description": "We automate repetitive tasks and workflows, enabling you to focus on strategic initiatives and improve operational efficiency.",
+            "tags": ["Workflow", "Data Sync", "Optimization"]
+        },
+        {
+            "id": "5",
+            "title": "Web Design",
+            "description": "Our web design services ensure aesthetically pleasing and user-friendly interfaces that elevate user experience and engagement.",
+            "tags": ["UI/UX", "Landing Pages", "Responsive Design"]
+        },
+        {
+            "id": "6",
+            "title": "Graphics Design",
+            "description": "We offer top-notch graphic design services, creating visually stunning assets for both digital and print media.",
+            "tags": ["Posters", "Infographics", "Advertisements"]
+        }
+    ]
+    
+}
