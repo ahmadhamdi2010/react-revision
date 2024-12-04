@@ -24,6 +24,15 @@ const App = () => {
     });
     return;
   }
+
+const deletePost = async (id) => {
+  const res = await fetch(`/api/blogPosts/${id}`, {
+    method: 'DELETE'
+  });
+  return;
+
+
+};
   
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -34,7 +43,7 @@ const App = () => {
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/addpost" element={<AddPost addPostSubmit={addingPost}/>}/>
         <Route path="/services/:id" element={<ServicePage/>}/>
-        <Route path="/blogPosts/:id" element={<BlogPost/>} loader={postLoader}/>
+        <Route path="/blogPosts/:id" element={<BlogPost deletePost={deletePost} />} loader={postLoader}/>
         <Route path='*' element={<NotFound/>}/>
       </Route>
     
