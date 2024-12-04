@@ -9,24 +9,38 @@ import NotFound from './pages/NotFound';
 import ServicePage from './pages/ServicePage';
 import Blog from './pages/Blog';
 import BlogPost, { postLoader} from './pages/BlogPost';
+import AddPost from './pages/AddPost';
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<MainLayout />}>
-      <Route index element= {<HomePage/>}/>
-      <Route path="/about" element={<About/>}/>
-      <Route path="/services" element={<Services/>}/>
-      <Route path="/blog" element={<Blog/>}/>
-      <Route path="/services/:id" element={<ServicePage/>}/>
-      <Route path="/blogPosts/:id" element={<BlogPost/>} loader={postLoader}/>
-      <Route path='*' element={<NotFound/>}/>
-    </Route>
-  
-)
-);
 
 
 const App = () => {
+  const addingPost = async (newPost) =>{
+    const res = await fetch('/api/blogPosts', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newPost)
+    });
+    return;
+  }
+  
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<MainLayout />}>
+        <Route index element= {<HomePage/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/services" element={<Services/>}/>
+        <Route path="/blog" element={<Blog/>}/>
+        <Route path="/addpost" element={<AddPost addPostSubmit={addingPost}/>}/>
+        <Route path="/services/:id" element={<ServicePage/>}/>
+        <Route path="/blogPosts/:id" element={<BlogPost/>} loader={postLoader}/>
+        <Route path='*' element={<NotFound/>}/>
+      </Route>
+    
+  )
+  );
+  
   return <RouterProvider router={router}/>
 }
 
