@@ -11,7 +11,7 @@ const HomeCards = ({isHome =false}) => {
 
   useEffect(()=>{
     const fetchServices = async ()=>{
-      const apiUrl = isHome ? 'http://localhost:8000/services?_limit=3':'http://localhost:8000/services';
+      const apiUrl = isHome ? '/api/services?_limit=3':'/api/services';
       try {
         const res = await fetch(apiUrl);
         const data = await res.json();
