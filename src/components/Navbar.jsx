@@ -6,7 +6,7 @@ import { useState } from 'react';
 const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'About', href: '/about', current: false },
-  { name: 'Projects', href: '#', current: false },
+  { name: 'Services', href: '/services', current: false },
   { name: 'Calendar', href: '#', current: false },
 ]
 
@@ -17,6 +17,8 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  
+
   return (
     <Disclosure as="nav" className="bg-gray-800">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

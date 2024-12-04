@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { MdOutlineDesignServices } from "react-icons/md";
 
 
-function Card({children, title, bodyText}) {
+function Card({children, title, bodyText, destination}) {
 
     const [showFullDescription, setshowFullDescription] = useState(false);
 
@@ -14,6 +14,9 @@ function Card({children, title, bodyText}) {
         description = description.substring(0, 90) + '...';
     }
 
+    let linkto = destination
+
+    console.log(linkto)
   return (
 
         <div className="brutalist-card">
@@ -30,7 +33,7 @@ function Card({children, title, bodyText}) {
         </div>
         
         <div className="brutalist-card__actions">
-            <ReadMorebtn/>
+            <ReadMorebtn destination={destination}/>
         </div>
         </div>
     

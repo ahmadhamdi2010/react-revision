@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <div>
         <Hero />
-    <HomeCards/>
+    <HomeCards isHome={true}/>
     app
   </div>
 
