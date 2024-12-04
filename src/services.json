@@ -36,6 +36,115 @@
             "description": "We offer top-notch graphic design services, creating visually stunning assets for both digital and print media.",
             "tags": ["Posters", "Infographics", "Advertisements"]
         }
+    ],
+    "blogPosts": [
+        {
+            "id": "101",
+            "datetime": "2024-12-01",
+            "date": "December 1, 2024",
+            "category": {
+                "title": "Web Development",
+                "href": "/categories/web-development"
+            },
+            "title": "The Future of Web Development: Trends to Watch",
+            "href": "/blog/the-future-of-web-development",
+            "description": "Explore the latest trends in web development, including AI-driven development, progressive web apps, and serverless architecture.",
+            "author": {
+                "name": "John Doe",
+                "role": "Web Developer",
+                "href": "/authors/john-doe",
+                "imageUrl": "/images/authors/john-doe.jpg"
+            }
+        },
+        {
+            "id": "102",
+            "datetime": "2024-11-25",
+            "date": "November 25, 2024",
+            "category": {
+                "title": "Branding",
+                "href": "/categories/branding"
+            },
+            "title": "Creating a Strong Brand Identity",
+            "href": "/blog/creating-a-strong-brand-identity",
+            "description": "Learn how to build a cohesive brand identity that resonates with your audience and strengthens your market presence.",
+            "author": {
+                "name": "Jane Smith",
+                "role": "Brand Strategist",
+                "href": "/authors/jane-smith",
+                "imageUrl": "/images/authors/jane-smith.jpg"
+            }
+        },
+        {
+            "id": "103",
+            "datetime": "2024-11-18",
+            "date": "November 18, 2024",
+            "category": {
+                "title": "IT Solutions",
+                "href": "/categories/it-solutions"
+            },
+            "title": "How IT Solutions Can Streamline Your Business",
+            "href": "/blog/how-it-solutions-can-streamline-business",
+            "description": "Discover the benefits of implementing CRM systems and telephony solutions to optimize your workflows and enhance customer service.",
+            "author": {
+                "name": "Alex Johnson",
+                "role": "IT Consultant",
+                "href": "/authors/alex-johnson",
+                "imageUrl": "/images/authors/alex-johnson.jpg"
+            }
+        },
+        {
+            "id": "104",
+            "datetime": "2024-11-10",
+            "date": "November 10, 2024",
+            "category": {
+                "title": "Automation",
+                "href": "/categories/automation"
+            },
+            "title": "The Power of Automation in Modern Businesses",
+            "href": "/blog/power-of-automation",
+            "description": "Understand how automation can save time, reduce errors, and increase productivity across various industries.",
+            "author": {
+                "name": "Emily White",
+                "role": "Automation Expert",
+                "href": "/authors/emily-white",
+                "imageUrl": "/images/authors/emily-white.jpg"
+            }
+        },
+        {
+            "id": "105",
+            "datetime": "2024-11-01",
+            "date": "November 1, 2024",
+            "category": {
+                "title": "Web Design",
+                "href": "/categories/web-design"
+            },
+            "title": "Web Design Principles for Better User Experience",
+            "href": "/blog/web-design-principles",
+            "description": "Find out the key principles of web design that create a seamless and enjoyable user experience.",
+            "author": {
+                "name": "Sarah Lee",
+                "role": "UI/UX Designer",
+                "href": "/authors/sarah-lee",
+                "imageUrl": "/images/authors/sarah-lee.jpg"
+            }
+        },
+        {
+            "id": "106",
+            "datetime": "2024-10-28",
+            "date": "October 28, 2024",
+            "category": {
+                "title": "Graphic Design",
+                "href": "/categories/graphic-design"
+            },
+            "title": "Graphic Design Trends to Elevate Your Brand",
+            "href": "/blog/graphic-design-trends",
+            "description": "Stay ahead of the curve with these graphic design trends that can help your brand stand out.",
+            "author": {
+                "name": "Michael Brown",
+                "role": "Graphic Designer",
+                "href": "/authors/michael-brown",
+                "imageUrl": "/images/authors/michael-brown.jpg"
+            }
+        }
     ]
-    
 }

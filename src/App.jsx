@@ -7,6 +7,8 @@ import About from './pages/About';
 import Services from './pages/services';
 import NotFound from './pages/NotFound';
 import ServicePage from './pages/ServicePage';
+import Blog from './pages/Blog';
+import BlogPost, { postLoader} from './pages/BlogPost';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,7 +16,9 @@ const router = createBrowserRouter(
       <Route index element= {<HomePage/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/services" element={<Services/>}/>
+      <Route path="/blog" element={<Blog/>}/>
       <Route path="/services/:id" element={<ServicePage/>}/>
+      <Route path="/blogPosts/:id" element={<BlogPost/>} loader={postLoader}/>
       <Route path='*' element={<NotFound/>}/>
     </Route>
   

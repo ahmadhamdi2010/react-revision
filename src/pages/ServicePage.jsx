@@ -3,7 +3,6 @@ import { useState,useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Spinner from '../components/Spinner'
 import PageTitle from '../components/Pagetitle'
-import { PaperClipIcon } from '@heroicons/react/20/solid'
 
 
 const ServicePage = () => {
