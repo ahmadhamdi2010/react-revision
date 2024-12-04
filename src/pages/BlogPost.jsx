@@ -3,7 +3,7 @@ import { useParams, useLoaderData } from 'react-router-dom';
 import Spinner from '../components/Spinner'
 import PageTitle from '../components/Pagetitle'
 import { useNavigate } from 'react-router-dom';
-
+import { toast } from 'react-toastify';
 
 
 const BlogPost = ({deletePost}) => {
@@ -17,6 +17,7 @@ const BlogPost = ({deletePost}) => {
         if(!confirm) return;
 
         deletePost(postId)
+        toast.success("Delete successful")
         navigate('/blog');
     }
 

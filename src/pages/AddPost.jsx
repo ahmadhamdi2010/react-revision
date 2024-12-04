@@ -2,7 +2,7 @@ import React from 'react'
 import PageTitle from '../components/Pagetitle'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import { toast } from 'react-toastify'
 
 const AddPost = ({addPostSubmit}) => {
     const [title, setTitle] = useState('');
@@ -24,6 +24,7 @@ const AddPost = ({addPostSubmit}) => {
             description: postBody,
         }
         addPostSubmit(newPost);
+        toast.success('Post added successfully')
         return navigate('/blog')
     };
     
