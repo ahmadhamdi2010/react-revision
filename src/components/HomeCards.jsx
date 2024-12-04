@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import { useState,useEffect } from 'react';
+import Spinner from './Spinner';
 
 
 const HomeCards = ({isHome =false}) => {
@@ -29,16 +30,18 @@ const HomeCards = ({isHome =false}) => {
   return (
     <div className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-1">
-            {loading? (<h2>Loading</h2>):(
-              <>
+        
+            {loading? (
+              <Spinner loading={loading}/>
+            ):(
+              <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-1">
               {services.map((service)=>(
                 <Card key={service.id} title={service.title} bodyText={service.description} destination={service.id} />
             ))}
-              </>
+              </div>
             ) }
             
-        </div>
+        
       </div>
     </div>
   )
