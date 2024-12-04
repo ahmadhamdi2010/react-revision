@@ -41,9 +41,11 @@ const BlogPost = ({deletePost}) => {
               {post.description}
             </dd>
             <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm/6 font-medium text-gray-900">Delete</dt>
+            <dt className="text-sm/6 font-medium text-gray-900">Options</dt>
             <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
             <button onClick={()=> onDeleteClick(post.id)} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">Delete</button>
+            <button onClick={()=> navigate(`/editPosts/${post.id}`)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Edit</button>
+
             </dd>
           </div>
           </div>

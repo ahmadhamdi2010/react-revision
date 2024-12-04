@@ -82,21 +82,12 @@
     },
     {
       "id": "102",
-      "datetime": "2024-11-25",
-      "date": "November 25, 2024",
-      "category": {
-        "title": "Branding",
-        "href": "/categories/branding"
-      },
       "title": "Creating a Strong Brand Identity",
-      "href": "/blog/creating-a-strong-brand-identity",
-      "description": "Learn how to build a cohesive brand identity that resonates with your audience and strengthens your market presence.",
       "author": {
-        "name": "Jane Smith",
-        "role": "Brand Strategist",
-        "href": "/authors/jane-smith",
-        "imageUrl": "/images/authors/jane-smith.jpg"
-      }
+        "name": "Jane Smither",
+        "role": "Brand Strategist"
+      },
+      "description": "Learn how to build a cohesive brand identity that resonates with your audience and strengthens your market presence."
     },
     {
       "id": "103",
@@ -172,7 +163,7 @@
     },
     {
       "id": "12c6",
-      "title": "test ",
+      "title": "better test ",
       "author": {
         "name": "my name ",
         "role": "creator of this "

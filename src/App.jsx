@@ -10,7 +10,7 @@ import ServicePage from './pages/ServicePage';
 import Blog from './pages/Blog';
 import BlogPost, { postLoader} from './pages/BlogPost';
 import AddPost from './pages/AddPost';
-
+import EditPost from './pages/EditPost';
 
 
 const App = () => {
@@ -30,10 +30,19 @@ const deletePost = async (id) => {
     method: 'DELETE'
   });
   return;
-
-
 };
   
+const updatePost = async (post) => {
+  const res = await fetch(`/api/blogPosts/${post.id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(post)
+  });
+  return;
+}
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
@@ -44,6 +53,7 @@ const deletePost = async (id) => {
         <Route path="/addpost" element={<AddPost addPostSubmit={addingPost}/>}/>
         <Route path="/services/:id" element={<ServicePage/>}/>
         <Route path="/blogPosts/:id" element={<BlogPost deletePost={deletePost} />} loader={postLoader}/>
+        <Route path="/editPosts/:id" element={<EditPost updatePostSubmit={updatePost}/>} loader={postLoader}/>
         <Route path='*' element={<NotFound/>}/>
       </Route>
     
